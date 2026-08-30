@@ -1,0 +1,26 @@
+{
+    "version": "0.22.0",
+    "description": "Universal zero-dependency linter & formatter — one binary, 30+ languages, no toolchain required.",
+    "homepage": "https://github.com/Goldziher/poly",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Goldziher/poly/releases/download/v0.22.0/poly-0.22.0-x86_64-pc-windows-msvc.zip",
+            "hash": "4172b51e72edbb0e992e244e0132559d69c269fd552b6c0574d1756d295c7f68"
+        }
+    },
+    "bin": "poly.exe",
+    "checkver": {
+        "github": "https://github.com/Goldziher/poly"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Goldziher/poly/releases/download/v$version/poly-$version-x86_64-pc-windows-msvc.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/Goldziher/poly/releases/download/v$version/sha256sums.txt"
+        }
+    }
+}
