@@ -12,9 +12,12 @@ scoop install poly
 
 ## Available
 
-| App | Description |
-| --- | --- |
-| [poly](https://github.com/Goldziher/poly) | Universal zero-dependency linter & formatter — one binary, 30+ languages, no toolchain required. |
+| App | Commands | Description |
+| --- | --- | --- |
+| [poly](https://github.com/Goldziher/poly) | `poly`, `polylint` | Universal zero-dependency linter & formatter — one binary, 30+ languages, no toolchain required. |
+
+`poly` is the command. `polylint` is an alias for it, so the name the package
+carries on PyPI and npm also works as a command.
 
 ## How manifests are updated
 
