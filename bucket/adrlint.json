@@ -1,12 +1,12 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "description": "A fast, opinionated linter and formatter for MADR architecture decision records",
     "homepage": "https://github.com/Goldziher/adrlint",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Goldziher/adrlint/releases/download/v0.1.0/adrlint-x86_64-pc-windows-msvc.zip",
-            "hash": "30441a3ad30cc8bcf3bc11ce028b50ffbd62199c400c6b2afd3264b12fa6e8b2"
+            "url": "https://github.com/Goldziher/adrlint/releases/download/v0.2.0/adrlint-x86_64-pc-windows-msvc.zip",
+            "hash": "47d9cec8431df891864abbfa5938dd30b3ca75abd11d317811685500cda2566b"
         }
     },
     "bin": "adrlint.exe",
