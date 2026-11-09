@@ -1,0 +1,26 @@
+{
+    "version": "0.11.1",
+    "description": "Commit message linting tool with presets, custom formats, and cleanup automation.",
+    "homepage": "https://github.com/Goldziher/gitfluff",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/Goldziher/gitfluff/releases/download/v0.11.1/gitfluff-x86_64-pc-windows-gnu.zip",
+            "hash": "ece9c3af07b91b6140466050922a4682d2920982ff1b196512930233d44b548b"
+        }
+    },
+    "bin": "gitfluff.exe",
+    "checkver": {
+        "github": "https://github.com/Goldziher/gitfluff"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/Goldziher/gitfluff/releases/download/v$version/gitfluff-x86_64-pc-windows-gnu.zip"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/Goldziher/gitfluff/releases/download/v$version/gitfluff_$version_checksums.txt"
+        }
+    }
+}
