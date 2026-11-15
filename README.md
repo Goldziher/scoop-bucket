@@ -14,6 +14,7 @@ scoop install poly
 
 | App | Commands | Description |
 | --- | --- | --- |
+| [ai-rulez](https://github.com/Goldziher/ai-rulez) | `ai-rulez` | Manage agent configuration, skills, and governance across coding agents. |
 | [gitfluff](https://github.com/Goldziher/gitfluff) | `gitfluff` | Commit message linter with presets, custom formats and cleanup automation. |
 | [polylint](https://github.com/Goldziher/polylint) | `poly`, `polylint` | Universal zero-dependency linter & formatter — one binary, 30+ languages, no toolchain required. |
 | [skif](https://github.com/Goldziher/skif) | `skif` | Dependency and package-manager linter for JavaScript and TypeScript monorepos. |
@@ -23,10 +24,9 @@ carries on PyPI and npm also works as a command.
 
 ## How manifests are updated
 
-Each manifest is published by its own project's release workflow, which points
-it at that release's prebuilt Windows archive and reuses the `sha256sums.txt`
-already attached to the release — the hash is never recomputed here, so the
-bucket and the release artifacts cannot disagree.
+Manifests point to each project's prebuilt Windows archive and use the SHA-256
+from its published release checksums. Project release workflows can update
+manifests automatically.
 
 The `checkver` / `autoupdate` blocks let `scoop` refresh a manifest from a new
 GitHub release directly, so a missed workflow run is recoverable.
